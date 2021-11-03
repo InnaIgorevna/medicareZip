@@ -8,6 +8,9 @@
  @import  url(https://fonts.googleapis.com/css?family=Oswald);
 
 
+
+
+
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     margin: 0;
     padding: 0;
@@ -18707,12 +18710,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .jscounter__unit-container {
-        margin-left:-11%;
-        width: 123%
-    }
-}
 
 .pg-steps.oe-banner--active .jscounter__container {
     background: #caddf6
@@ -18722,12 +18719,14 @@ h1,h2,h3,h4,h5,h6 {
     background: #1076c7;
     padding: 11px;
     position: relative;
-    top: 0;
+    top: 79px;
     text-align: center;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
-    width: 100%
+    width: 100%;
+    display: block;
+    background: linear-gradient(180deg,#ffab5e 0,#e8790b);
 }
 
 @media screen and (min-width: 768px) {
@@ -18738,6 +18737,7 @@ h1,h2,h3,h4,h5,h6 {
     .oe-banner--active.pg-findplans-redesign.oe--open .hero,.oe-banner--active.pg-findplans-redesign.oe--pre .hero {
         margin-top: 0
     }
+
 }
 
 .oe-banner--active.pg-findplans.pg-info .oe-banner,.oe-banner--active.pg-findplans.pg-medicareforall .oe-banner,.oe-banner--active.pg-findplans.pg-medicarenews .oe-banner,.oe-banner--active.pg-findplans.pg-medigap .oe-banner,.oe-banner--active.pg-findplans.pg-openrollment .oe-banner {
@@ -18751,6 +18751,9 @@ h1,h2,h3,h4,h5,h6 {
         padding-left: 0;
         padding-right: 0
     }
+    .oe-banner {
+        top: 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -18759,6 +18762,15 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .header__phone-content{
+        margin-top: 4px;
+    }
+    .oe-banner {
+        padding: 5px;
+        font-size: 13px;
+    }
+}
 .oe-banner--active.pg-landing.oe--open.pg-compare .hero,.oe-banner--active.pg-landing.oe--open.pg-findplans .hero,.oe-banner--active.pg-landing.oe--open.pg-openenrollment .hero,.oe-banner--active.pg-landing.oe--open.pg-partb .hero,.oe-banner--active.pg-landing.oe--open.pg-socialsecurity .hero,.oe-banner--active.pg-landing.oe--open.pg-steps .hero,.oe-banner--active.pg-landing.oe--pre.pg-compare .hero,.oe-banner--active.pg-landing.oe--pre.pg-findplans .hero,.oe-banner--active.pg-landing.oe--pre.pg-openenrollment .hero,.oe-banner--active.pg-landing.oe--pre.pg-partb .hero,.oe-banner--active.pg-landing.oe--pre.pg-socialsecurity .hero,.oe-banner--active.pg-landing.oe--pre.pg-steps .hero,.oe-banner--active.pg-steps.oe--open.pg-compare .hero,.oe-banner--active.pg-steps.oe--open.pg-findplans .hero,.oe-banner--active.pg-steps.oe--open.pg-openenrollment .hero,.oe-banner--active.pg-steps.oe--open.pg-partb .hero,.oe-banner--active.pg-steps.oe--open.pg-socialsecurity .hero,.oe-banner--active.pg-steps.oe--open.pg-steps .hero,.oe-banner--active.pg-steps.oe--pre.pg-compare .hero,.oe-banner--active.pg-steps.oe--pre.pg-findplans .hero,.oe-banner--active.pg-steps.oe--pre.pg-openenrollment .hero,.oe-banner--active.pg-steps.oe--pre.pg-partb .hero,.oe-banner--active.pg-steps.oe--pre.pg-socialsecurity .hero,.oe-banner--active.pg-steps.oe--pre.pg-steps .hero {
     margin-top: 0
 }

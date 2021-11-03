@@ -61,8 +61,7 @@
                         
             <div class=" oe-banner oe-banner--active oe-banner--o65 oe--open ">
 
-              Medicare Annual Enrollment Period (AEP) for 2022 is <br />
-October 15th - December 7th, 2021
+              Medicare Annual Enrollment Period (AEP) for 2022 is October 15th - December 7th, 2021
 
               <div class="oe__close">×</div>
             </div>
@@ -87,7 +86,7 @@ October 15th - December 7th, 2021
               <div class="form__container">
                   <div class="form__group">
                       <label class="form__label" for="zip1">Enter Your Zip Code</label>
-                      <input class="form__zip" type="tel"  name="zip1" aria-label="zip" placeholder="Enter Zip" pattern="\d*" maxlength="6" data-rule-required="true" data-rule-minlength="6" data-rule-maxlength="6" data-rule-number="true" data-rule-valid_zip="true" aria-required="true">
+                      <input class="form__zip" type="tel"  name="zip1" aria-label="zip" required="" placeholder="Enter Zip" pattern="\d*" maxlength="6" data-rule-required="true" data-rule-minlength="6" data-rule-maxlength="6" data-rule-number="true" data-rule-valid_zip="true" aria-required="true">
                   </div>
                   <button class="form__submit" type="submit">Get Started</button>
               </div>
@@ -197,7 +196,7 @@ October 15th - December 7th, 2021
           <div class="block-form">
             <form action="#" method="post">
               <label class="form__label" for="zip2">Enter Your Zip Code</label>
-              <input class="form__zip" type="tel"  name="zip2" aria-label="zip" placeholder="Enter Zip" pattern="\d*" maxlength="6" data-rule-required="true" data-rule-minlength="6" data-rule-maxlength="6" data-rule-number="true" data-rule-valid_zip="true" aria-required="true">
+              <input class="form__zip" type="tel"  name="zip2" aria-label="zip" required="" placeholder="Enter Zip" pattern="\d*" maxlength="6" data-rule-required="true" data-rule-minlength="6" data-rule-maxlength="6" data-rule-number="true" data-rule-valid_zip="true" aria-required="true">
               <button class="form__submit" type="submit">Get Started</button>
             </form>
           </div>
@@ -424,9 +423,10 @@ By using this site, you acknowledge that you have read and agree to the Privacy 
       </div>
       
             <style>.acsb-trigger {border: solid 2px #fff;}</style>
+            
 
             <script src="js/jquery-1.12.4.min.js"></script>
-            <script src="js/mi.js"></script>
+            <!-- <script src="js/mi.js"></script> -->
             <script>//tempory til code cleanup task is complete
                 $(window).on("scroll",function(){
                     if( $(this).scrollTop()>500 ){
@@ -435,6 +435,15 @@ By using this site, you acknowledge that you have read and agree to the Privacy 
                         $("body").removeClass("scroll__follow");
                     }
                 });
+                $(window).on("scroll", function() {
+                  $(".icon__phone-follow, .icon__form-follow").size() > 0 && ($(this).scrollTop() > 100 ? $(".icon__phone-follow, .icon__form-follow").removeClass("hide") : $(".icon__phone-follow, .icon__form-follow").addClass("hide"))
+                });
+                $(".oe__close").click(function() {
+                  $(".jscounter__container").hide(),
+                  $(".icon__phone-follow").css("bottom", "20px"),
+                  $(".icon__form-follow").css("bottom", "20px")
+                });
+
             </script>
         
     </body>
